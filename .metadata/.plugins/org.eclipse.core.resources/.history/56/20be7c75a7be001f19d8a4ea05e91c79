@@ -1,0 +1,27 @@
+package com.tcs.springmvc.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.tcs.springmvc.model.Product;
+
+import com.tcs.springmvc.service.ProductService;
+@Controller
+public class Productcontroller {
+	@Autowired
+	ProductService s;
+     @GetMapping("/product")
+     public String getproductform() {
+    	 return "add-productform";
+     }
+@PostMapping("/saveproduct")
+public String saveproduct(Product p) {
+    System.out.println(p);
+    return"sucess" ;
+}
+
+
+}

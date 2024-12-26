@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+</head>
+<body>
+	<h1>employee details form</h1>
+	<form th:action="@{/saveemployee}"method="post">
+		<label>Employee Id:</label>
+		<input type="number" name="eId" required>
+		<br><br>
+		<label>Employee Name:</label>
+		<input type="text" name="eName">
+		<br><br>
+		<label>Employee Salary:</label>
+		<input type="number" name="esalary">
+		<br><br>
+		<label>Employee Department:</label>
+		<input type="text" name="eDept">
+		<br><br>
+		<label>Employee Address:</label>
+		<input type="text" name="eAddress">
+		<br><br>
+		<button type="submit">submit</button>
+	</form>
+</body>

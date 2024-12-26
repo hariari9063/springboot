@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.BndtoolsJAREditorTempFiles</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>temp/10000001/lombok.jar</name>
+			<type>2</type>
+			<locationURI>jarf:///file:/C:/springboot%20MVC/SpringMVCtest/src/main/java/lombok.jar!/</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

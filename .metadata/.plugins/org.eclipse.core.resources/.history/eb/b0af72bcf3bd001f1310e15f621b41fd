@@ -1,0 +1,12 @@
+package com.tcs.springmvc.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.tcs.springmvc.entity.Productentity;
+import com.tcs.springmvc.model.Product;
+
+@Repository
+public interface Productrepository extends JpaRepository<Productentity,Long>  {
+
+}

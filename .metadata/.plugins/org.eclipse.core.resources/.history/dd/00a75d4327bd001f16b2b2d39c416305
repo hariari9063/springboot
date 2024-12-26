@@ -1,0 +1,19 @@
+package com.tcs.springmvc.product;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class Productdetails {
+ @GetMapping("/add-product")
+  public String getform(){
+	 return "add-product";
+ }
+ @PostMapping("/saveproduct") 
+ public String saveproduct(Product product) {
+	 System.out.println(product);
+	 return "success";
+ }
+}

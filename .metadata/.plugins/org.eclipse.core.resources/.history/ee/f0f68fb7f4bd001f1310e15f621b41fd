@@ -1,0 +1,13 @@
+package com.tcs.springmvc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.stereotype.Service;
+
+import com.tcs.springmvc.repository.Productrepository;
+
+@Service
+public class ProductService {
+	@Autowired
+    Productrepository repository;
+}
